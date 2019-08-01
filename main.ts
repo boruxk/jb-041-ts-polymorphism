@@ -64,6 +64,7 @@ class Square extends Shape implements IDrawable {
 
     draw() {
         console.log("DRAW SQUARE");
+        
 
         //     var main: HTMLElement = document.getElementById("starlet");
         //     var temp: string = "";
@@ -133,7 +134,7 @@ class Rectangle extends Shape implements IDrawable {
 
 class Tester {
     public static test(): void {
-        var shape: Shape;
+        var shape!: Shape;
         var randNum = (Math.floor(Math.random() * 3)) + 1;
 
         if (randNum == 1) {
